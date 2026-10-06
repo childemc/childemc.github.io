@@ -1,0 +1,52 @@
+---
+title: Systems
+subtitle: the molecular systems we study
+permalink: /systems/
+after_js:
+  - /assets/js/systems.js
+---
+<section id="systems">
+  <div class="section-wrap">
+    <div class="videos-grid reveal">
+      {%- for v in site.data.videos -%}
+      {%- assign idx = forloop.index0 -%}
+      <button type="button" class="video-container system-card" data-video="{{ idx }}">
+        <div class="system-thumb">
+          {%- if v.poster -%}
+          <img src="{{ '/assets/media/videos/' | append: v.poster | relative_url }}" alt="" />
+          {%- else -%}
+          <video preload="metadata" muted playsinline src="{{ '/assets/media/videos/' | append: v.file | relative_url }}#t=0.1"></video>
+          {%- endif -%}
+          <span class="system-play" aria-hidden="true">▶</span>
+        </div>
+        <div class="video-title">{{ v.title }}</div>
+        <div class="r-tags">
+          {%- for sid in v.systems -%}
+          {%- assign s = site.data.systems | where: "id", sid | first -%}
+          <span class="tag">{{ s.name }}</span>
+          {%- endfor -%}
+        </div>
+      </button>
+      <template id="video-tpl-{{ idx }}">
+        <h2 class="rmodal-title">{{ v.title }}</h2>
+        <video controls playsinline src="{{ '/assets/media/videos/' | append: v.file | relative_url }}"{% if v.poster %} poster="{{ '/assets/media/videos/' | append: v.poster | relative_url }}"{% endif %}></video>
+        {%- for sid in v.systems -%}
+        {%- assign s = site.data.systems | where: "id", sid | first %}
+        <div class="system-info">
+          <h3>{{ s.name }}</h3>
+          <p>{{ s.description }}</p>
+        </div>
+        {%- endfor -%}
+      </template>
+      {%- endfor -%}
+    </div>
+
+    <div id="system-modal" class="rmodal">
+      <div class="rmodal-overlay"></div>
+      <div class="rmodal-content system-modal-content">
+        <button class="rmodal-close" aria-label="Close">&times;</button>
+        <div class="rmodal-body"></div>
+      </div>
+    </div>
+  </div>
+</section>

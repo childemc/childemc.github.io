@@ -1,0 +1,143 @@
+remote_theme: dieghernan/chulapa
+
+# Site settings
+title: Research Portfolio
+subtitle: ""
+description: Research portfolio of Dr. Matt Childers
+url: https://childemc.github.io
+baseurl: /research-portfolio
+repository: childemc/research-portfolio
+locale: en-US
+timezone: America/Los_Angeles
+
+author:
+  name: Matthew Childers
+  avatar: /assets/mcc_headshot.jpg
+  location: Seattle, WA
+  links:
+    - url: https://scholar.google.com/citations?user=TIlcx8oAAAAJ&hl=en
+      icon: fas fa-graduation-cap
+    - url: https://pubmed.ncbi.nlm.nih.gov/?term=Childers+MC%5BAuthor%5D
+      icon: fas fa-book-medical
+    - url: https://orcid.org/0000-0003-2440-9612
+      icon: fab fa-orcid
+    - url: https://github.com/childemc
+      icon: fab fa-github
+
+search:
+  provider:
+
+# Navigation
+navbar:
+  brand:
+    title: Childers Group 
+  nav:
+    - title: People
+      url: /people/
+    - title: Research
+      url: /research/
+    - title: Software
+      url: /software/
+    - title: Publications
+      url: /publications/
+    - title: Systems
+      url: /systems/
+    - title: Media
+      url: /media/
+    - title: Contact
+      url: /contact/
+
+footer:
+  links:
+    - label: Scholar
+      icon: fas fa-graduation-cap
+      url: https://scholar.google.com/citations?user=TIlcx8oAAAAJ&hl=en
+    - label: PubMed
+      icon: fas fa-book-medical
+      url: https://pubmed.ncbi.nlm.nih.gov/?term=Childers+MC%5BAuthor%5D
+    - label: ORCID
+      icon: fab fa-orcid
+      url: https://orcid.org/0000-0003-2440-9612
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/childemc
+
+# Theme typography and finalized palette
+googlefonts:
+  - url: https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Google+Sans+Code:wght@400;500;600;700&display=swap
+
+chulapa-skin:
+  highlight: default
+  autothemer: true
+  vars:
+    primary: "#202C44"
+    secondary: "#46698C"
+    success: "#3A96A0"
+    info: "#8AA3B3"
+    warning: "#FDC77C"
+    light: "#D3DFDF"
+    dark: "#202C44"
+    body-bg: "#FFFFFF"
+    body-color: "#202C44"
+    link-color: "#3A96A0"
+    headings-color: "#202C44"
+    font-family-base: "'Google Sans', Arial, sans-serif"
+    headings-font-family: "'Google Sans', Arial, sans-serif"
+    font-size-base: "1.05rem"
+    line-height-base: "1.75"
+    navbar-chulapa-bg-color: "#202C44"
+    navbar-chulapa-text-color: "#D3DFDF"
+    navbar-chulapa-hover-color: "#8AA3B3"
+    navbar-chulapa-active-color: "#8AA3B3"
+    navbar-chulapa-brand-color: "#FFFFFF"
+    navbar-chulapa-brand-hover-color: "#8AA3B3"
+    footer-chulapa-bg-color: "#202C44"
+    footer-chulapa-text-color: "#D3DFDF"
+    footer-chulapa-link-color: "#8AA3B3"
+    footer-chulapa-hover-color: "#8AA3B3"
+    footer-chulapa-icon-color: "#D3DFDF"
+    footer-chulapa-icon-hover-color: "#8AA3B3"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: wide
+      header_type: base
+
+compress_html:
+  clippings: all
+  blanklines: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - color_palette.jpg
+  - vendor
+  - .github
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - function-units
+    - abs-percent

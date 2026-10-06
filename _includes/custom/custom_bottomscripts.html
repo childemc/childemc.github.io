@@ -1,0 +1,7 @@
+{%- for url in page.bottom_js -%}
+<script src="{% if url contains '://' %}{{ url }}{% else %}{{ url | relative_url }}{% endif %}"></script>
+{%- endfor -%}
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+{%- for url in page.after_js -%}
+<script src="{% if url contains '://' %}{{ url }}{% else %}{{ url | relative_url }}{% endif %}"></script>
+{%- endfor -%}

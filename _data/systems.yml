@@ -1,0 +1,25 @@
+# Placeholder entries: edit names and descriptions. `id` is referenced by videos.yml.
+- id: myosin
+  name: Myosin Motor Domain
+  description: The ATPase motor that converts chemical energy into force; we study how mutations and small molecules affect its function.
+- id: elc
+  name: Essential Light Chain
+  description: A light chain that binds to the neck region of myosin, stabilizing its structure and modulating its motor activity.
+- id: rlc
+  name: Regulatory Light Chain
+  description: A light chain that binds to the neck region of myosin, regulating its activity in response to phosphorylation and other signals.
+- id: troponin
+  name: Skeletal Troponin C
+  description: The Ca2+-binding subunit of the troponin complex that regulates muscle contraction in response to calcium signals.
+- id: cmybpc
+  name: Cardiac Myosin Binding Protein C
+  description: A modular protein that binds myosin and actin, modulating sarcomere structure and contractility; mutations are linked to cardiomyopathies.
+- id: actin
+  name: Actin Filament
+  description: The primary component of the thin filament; provides a track for myosin motors and plays a central role in muscle contraction.
+- id: actinin
+  name: Alpha-Actinin
+  description: A crosslinking protein that organizes actin filaments into bundles and anchors them to the Z-disc in muscle sarcomeres.
+- id: nebulin
+  name: Nebulin
+  description: A large actin-binding protein that stabilizes thin filaments and regulates their length in muscle sarcomeres.

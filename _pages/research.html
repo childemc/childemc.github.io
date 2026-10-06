@@ -1,0 +1,103 @@
+---
+title: Research
+subtitle: major interests of the group
+permalink: /research/
+---
+<section id="research">
+  <div class="section-wrap">
+    <div class="research-grid">
+
+      <div class="r-card reveal" style="transition-delay:0.08s" data-card-id="01">
+        <div class="r-card-text">
+          <div class="r-card-num">01</div>
+          <h3>Muscle Structure, Dynamics &amp; Function</h3>
+          <p class="r-card-question">How do sarcomeric assemblies work together to generate force?</p>
+          <p>Sarcomeres, the fundamental contractile units of muscle cells, contain organized arrays of thick 
+             and thin filaments that interact to generate force. Myosin motor proteins in the thick filament consume 
+             ATP to power translation of actin filaments. This process, called the crossbridge cycle, is the structural 
+             basis for muscle contraction. The major focus of the lab is quantifying the precise conformational 
+             changes that occur in myosin and actin during this cycle and how disease-causing mutations
+             disrupt the themodynamics and/or kinetics of specific conformational changes.</p>
+
+          <p>
+             Beyond actin and myosin, numerous structural and regulatory proteins contribute to sarcomere organization and function.
+             Understanding how these components interact and are regulated is essential for a comprehensive view of muscle mechanics.
+
+          </p>
+        </div>
+        <div class="r-card-caption" hidden>A cartoon schematic of the crossbridge cycle identifies the key molecular players and conformational transitions that drive muscle contraction.</div>
+        <img class="r-card-img" src="{{ '/assets/media/images/xbc.png' | relative_url }}" alt="" loading="lazy">
+      </div>
+
+      <div class="r-card reveal" data-card-id="02">
+        <div class="r-card-text">
+          <div class="r-card-num">02</div>
+          <h3>Biomolecular Allostery</h3>
+          <p class="r-card-question">How do proteins transmit signals through their structures?</p>
+          <p>Allostery, the 'second secret of life,' refers to the process by which proteins transmit structural signals
+             through altered conformations or dynamics. This mechanism allows distant sites within a protein to communicate,
+             enabling precise regulation of biological activity. Allosteric signaling is highly prevalent in the sarcomere: 
+             binding of calcium to troponin-c induces conformational changes that activate thin filaments; binding, hydrolysis,
+             and release of ATP and its byproducts (ADP, Pi) drive conformational changes in myosin that control its interactions
+             with the thin filament and the powerstroke; formation of multiple actin-myosin crossbridges induce long-range conformational
+             changes in thin filament proteins such as tropomyosin and control cooperative activation in the sarcomere.</p>
+          <p>Despite the ubiquity of allostery in the sarcomere, many details of how these long-range conformational
+             changes are propagated and regulated remain poorly understood. We use molecular simulations to identify correlated structural changes, 
+             to map the sequence of events as an allosteric signal travels through a molecule, and to predict conformational bottlenecks that tune allosteric communication.
+             This information helps us understand not only the fundamental mechanisms of muscle contraction but also suggests the mechanisms by which mutations and small molecules
+             variously impede, correct, or modulate force generation.</p>
+
+             </p>
+        </div>
+        <div class="r-card-caption" hidden>Graph-theoretic analysis of protein dynamics reveals underlying 'community' structures and allosteric transition 'pathways' between them.</div>
+        <img class="r-card-img" src="{{ '/assets/media/images/myosin_communities.png' | relative_url }}" alt="" loading="lazy">
+      </div>
+
+      <div class="r-card reveal" style="transition-delay:0.16s" data-card-id="03">
+        <div class="r-card-text">
+          <div class="r-card-num">03</div>
+          <h3>Drug Discovery</h3>
+          <p class="r-card-question">Can we design molecules that tune muscle protein function?</p>
+          <p>The clinical success of drugs like Camzyos and Myqorzo have validated sarcomere proteins as viable therapeutic targets.
+             We seek to translate the understanding of sarcomere protein function into the identification and development of novel sarcomere-targeted therapeutic molecules.
+          </p>
+        </div>
+        <div class="r-card-caption" hidden>The binding sites of clinical and research compounds are mapped on to an apo X-ray crystal structure of myosin.</div>
+        <img class="r-card-img" src="{{ '/assets/media/images/myosin_druggability.png' | relative_url }}" alt="" loading="lazy">
+      </div>
+
+
+      <div class="r-card reveal" style="transition-delay:0.16s" data-card-id="04">
+        <div class="r-card-text">
+          <div class="r-card-num">04</div>
+          <h3>Simulation Validation &amp; Benchmarking</h3>
+          <p class="r-card-question">How accurate and reliable are atomic-scale simulations?</p>
+          <p>The accuracy problem: simulated dynamics of atomic-scale systems are sensitive to their parameterization. We develop tools to 
+            compare simulation observables against experimental data and design hybrid approaches that combine simulation and experiment for improved accuracy.
+            
+            The sampling problem: accessible simulation timescales are not always sufficient to capture the full range of relevant molecular motions.
+            We employ enhanced sampling techniques and multi-scale modeling approaches to overcome these limitations.
+            We have also developed software to quantify uncertainty in simulation observables and place confidence intervals on simulation predictions.
+            
+            The chaos problem: Atomistic simulations are subject to chaotic dynamics.
+            Two simulations that start at identical positions in phase space can quickly diverge,
+            leading to different trajectories. When comparing different simulation conditions, it can be difficult to know whether observed differences are due to the underlying physics or simply the chaotic nature of the simulations.
+            We have developed software to aid in distinguishing between genuine physical effects and artifacts arising from chaotic divergence in simulations.</p>
+        </div>
+        <div class="r-card-caption" hidden>MD simulations turn static protein snapshots into a dynamic ensemble and certain observables such as inter-hydrogen distances are measurable in both simulation and experiment. </div>
+        <img class="r-card-img" src="{{ '/assets/media/images/validation_benchmarking.jpg' | relative_url }}" alt="" loading="lazy">
+      </div>
+    </div>
+
+    <div id="research-modal" class="rmodal">
+      <div class="rmodal-overlay"></div>
+      <div class="rmodal-content rmodal-figure-content">
+        <button class="rmodal-close">&times;</button>
+        <figure class="rmodal-figure">
+          <img class="rmodal-img" src="" alt="">
+          <figcaption class="rmodal-caption"></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+# Placeholder entries: drop mp4 files in assets/media/videos/ and optional poster images alongside.
+# `systems` lists ids from systems.yml; a video can belong to several.
+- title: Wild Type Pre-powerstroke Myosin
+  file: wt_movie.mp4
+  poster:
+  systems: [myosin, elc, rlc]
+- title: D239N Pre-powerstroke Myosin
+  file: d239n_movie.mp4
+  poster:
+  systems: [myosin, elc, rlc]
+- title: IHM Departure
+  file: uihm_2.mp4
+  systems: [myosin, elc, rlc]
+- title: Actinin Open-Close Transition
+  file: actinin_movie.mp4
+  poster:
+  systems: [actinin]
+- title: Actin Filament Dynamics
+  file: actin_movie.mp4
+  poster:
+  systems: [actin, nebulin]
+- title: cMyBP-C Dynamics
+  file: cmybpc.mp4
+  poster:
+  systems: [cmybpc]
+- title: N-skTnC Transition
+  file: NskTnC_activation1.mp4
+  poster:
+  systems: [troponin]
+- title: Myosin Druggable Sites
+  file: druggability_movie.mp4
+  poster:
+  systems: [myosin]
