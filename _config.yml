@@ -5,8 +5,8 @@ title: Research Portfolio
 subtitle: ""
 description: Research portfolio of Dr. Matt Childers
 url: https://childemc.github.io
-baseurl: /research-portfolio
-repository: childemc/research-portfolio
+baseurl: ""
+repository: childemc/childemc.github.io
 locale: en-US
 timezone: America/Los_Angeles
 
